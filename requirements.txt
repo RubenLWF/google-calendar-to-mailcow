@@ -1,0 +1,4 @@
+vdirsyncer==0.20.0
+icalendar>=5.0
+python-dateutil>=2.8
+python-dotenv>=1.0

@@ -1,0 +1,13 @@
+people/
+.env
+config
+status/
+filtered/
+*.ics
+sync.log
+
+venv/
+__pycache__/
+.git/
+.gitignore
+CRON

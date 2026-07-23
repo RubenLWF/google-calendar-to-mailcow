@@ -1,0 +1,13 @@
+.env
+people/*.env
+!people/example.env
+
+config
+
+filtered/
+status/
+*.ics
+sync.log
+
+venv/
+__pycache__/
