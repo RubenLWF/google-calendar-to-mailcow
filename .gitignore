@@ -11,3 +11,5 @@ sync.log
 
 venv/
 __pycache__/
+
+/.claude
