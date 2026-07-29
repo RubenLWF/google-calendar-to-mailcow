@@ -24,6 +24,7 @@ import shutil
 import subprocess
 import sys
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from dotenv import dotenv_values
@@ -204,6 +205,8 @@ def main() -> int:
             run_cycle()
         except Exception:
             log.exception("run_cycle crashed; continuing")
+        next_sync = datetime.now() + timedelta(seconds=SYNC_INTERVAL)
+        log.info("next sync at %s", next_sync.strftime("%Y-%m-%d %H:%M:%S"))
         time.sleep(SYNC_INTERVAL)
 
 
